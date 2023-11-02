@@ -1,0 +1,39 @@
+//creamos una variable
+@api = http://localhost:4000/turnos
+
+
+GET {{api}}
+
+###
+POST {{api}}
+//aqui le decimos que mandamos un objeto json
+Content-Type: application/json
+
+{
+  "Fecha": "1/02/2019",
+  "Hora": "10:00 AM",
+  "Nombre": "Martina",
+  "Apellido": "Luque",
+  "Telefono": "3573458230"
+}
+
+###
+GET {{api}}/3
+
+### 
+DELETE {{api}}/3
+
+###
+GET {{api}}/count
+
+###
+PUT {{api}}/4
+Content-Type: application/json
+
+{
+  "Fecha": "1/02/2020",
+  "Hora": "11:00 AM",
+  "Nombre": "Horarcio",
+  "Apellido": "Luque",
+  "Telefono": "3573444430"
+}

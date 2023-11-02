@@ -1,0 +1,6 @@
+#en esta carpeta se ponen los documentos que vamos a ignorar al subir a git
+.env
+
+node_modules
+
+dist
